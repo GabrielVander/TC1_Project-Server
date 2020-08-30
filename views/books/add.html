@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous"
+		/>
+
+		<link rel="stylesheet" type="css" href="styles.css" />
+
+		<style>
+			body {
+				text-align: center;
+				min-height: 100vh;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+		</style>
+	</head>
+
+	<body class="bg-dark">
+		<div class="container">
+			<div class="row">
+				<div class="col justify-content-around">
+					<div class="row justify-content-center mt-3">
+						<div class="col">
+							<h2
+								class="text-white text-capitalize text-monospace font-weight-bold"
+							>
+								add new book
+							</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center mt-3">
+				<form action="/books/list">
+					<div class="row">
+						<div class="col">
+							<div class="form-group text-white">
+								<label for="isbnInput">ISBN</label>
+								<input
+									type="text"
+									class="form-control"
+									id="isbnInput"
+									placeholder="Insert the book's ISBN"
+								/>
+							</div>
+						</div>
+						<div class="col">
+							<div class="form-group text-white">
+								<label for="titleInput">Title</label>
+								<input
+									type="text"
+									class="form-control"
+									id="titleInput"
+									placeholder="Insert books's title"
+								/>
+							</div>
+						</div>
+						<div class="col">
+							<div class="form-group text-white">
+								<label for="genreSelect">Genre</label>
+								<select class="form-control" id="genreSelect">
+									<option>Action</option>
+									<option>Adventure</option>
+									<option>Classics</option>
+									<option>Comic</option>
+									<option>Mystery</option>
+									<option>Fantasy</option>
+									<option>Historical Fiction</option>
+									<option>Literary Fiction</option>
+									<option>Science Fiction</option>
+									<option>Horror</option>
+									<option>Romance</option>
+									<option>Suspense</option>
+									<option>Biography</option>
+									<option>Real History</option>
+									<option>Self-help</option>
+									<option>Poetry</option>
+									<option>True Crime</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="form-group text-white">
+								<label for="authorsInput">Authors</label>
+								<input
+									type="text"
+									class="form-control"
+									id="authorsInput"
+									placeholder="Insert the authors' names"
+								/>
+							</div>
+						</div>
+						<div class="col">
+							<div class="form-group text-white">
+								<label for="numPagesInput">Number of pages</label>
+								<input
+									type="text"
+									class="form-control"
+									id="numPagesInput"
+									placeholder="Insert the number of pages"
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<button type="submit" class="btn btn-primary">Save</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+			integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous"
+		/>
+
+		<link rel="stylesheet" type="css" href="styles.css" />
+
+		<style>
+			body {
+				text-align: center;
+				min-height: 100vh;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+		</style>
+	</head>
+
+	<body class="bg-dark">
+		<div class="container">
+			<div class="row">
+				<div class="col justify-content-around">
+					<div class="row justify-content-center mt-3">
+						<h2
+							class="text-white text-capitalize text-monospace font-weight-bold"
+						>
+							add new person
+						</h2>
+					</div>
+					<div class="row justify-content-center mt-3">
+						<form action="/people/list">
+							<div class="col">
+								<div class="row">
+									<div class="col p-4">
+										<div class="row justify-content-center">
+											<div class="form-group text-white">
+												<label for="cpfInput">CPF</label>
+												<input
+													type="text"
+													class="form-control"
+													id="cpfInput"
+													placeholder="Insert your CPF"
+												/>
+											</div>
+										</div>
+									</div>
+									<div class="col p-4">
+										<div class="row justify-content-center">
+											<div class="form-group text-white">
+												<label for="nameInput">Name</label>
+												<input
+													type="text"
+													class="form-control"
+													id="nameInput"
+													placeholder="Insert your name"
+												/>
+											</div>
+										</div>
+									</div>
+									<div class="col p-4">
+										<div class="row justify-content-center">
+											<div class="form-group text-white">
+												<label for="addressInput">Address</label>
+												<input
+													type="text"
+													class="form-control"
+													id="addressInput"
+													placeholder="Insert your address"
+												/>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col p-4">
+										<div class="row justify-content-center">
+											<div class="form-group text-white">
+												<label for="streetNumberInput">Street Number</label>
+												<input
+													type="text"
+													class="form-control"
+													id="streetNumberInput"
+													placeholder="Insert your street number"
+												/>
+											</div>
+										</div>
+									</div>
+									<div class="col p-4">
+										<div class="row justify-content-center">
+											<div class="form-group text-white">
+												<label for="zipCodeInput">ZIP code</label>
+												<input
+													type="text"
+													class="form-control"
+													id="zipCodeInput"
+													placeholder="Insert your CEP"
+												/>
+											</div>
+										</div>
+									</div>
+									<div class="col p-4">
+										<div class="row justify-content-center">
+											<div class="form-group text-white">
+												<label for="firstEmailInput">Email</label>
+												<input
+													type="email"
+													class="form-control"
+													id="firstEmailInput"
+													placeholder="Primary Email"
+												/>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col p-4">
+										<div class="row justify-content-center">
+											<div class="form-group text-white">
+												<label for="secondEmailInput">Email 2</label>
+												<input
+													type="email"
+													class="form-control"
+													id="secondEmailInput"
+													placeholder="Secondary Email"
+												/>
+											</div>
+										</div>
+									</div>
+									<div class="col p-4">
+										<div class="row justify-content-center">
+											<div class="form-group text-white">
+												<label for="firstPhoneInput">Phone</label>
+												<input
+													type="text"
+													class="form-control"
+													id="firstPhoneInput"
+													placeholder="912345678"
+												/>
+											</div>
+										</div>
+									</div>
+									<div class="col p-4">
+										<div class="row justify-content-center">
+											<div class="form-group text-white">
+												<label for="secondPhoneInput">Phone 2</label>
+												<input
+													type="text"
+													class="form-control"
+													id="secondPhoneInput"
+													placeholder="912345678"
+												/>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col p-4">
+										<div class="row justify-content-center">
+											<div class="form-group text-white">
+												<label for="birthDateInput">Birth date</label>
+												<input
+													type="date"
+													class="form-control"
+													id="birthDateInput"
+												/>
+											</div>
+										</div>
+									</div>
+									<div class="col p-4">
+										<div class="row justify-content-center">
+											<div class="form-group text-white">
+												<label for="occupationInput">Occupation</label>
+												<input
+													type="text"
+													class="form-control"
+													id="occupationInput"
+													placeholder="Insert your occupation"
+												/>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col p-4">
+										<div class="row justify-content-center">
+											<button type="submit" class="btn btn-primary">
+												Save
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+			integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
